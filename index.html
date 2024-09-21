@@ -5,7 +5,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="profile" href="https://gmpg.org/xfn/11"/>
-        <title>Quiénes somos</title>
+        <title>Cadete femenino UBL</title>
         <link rel="icon" href="fotos/escudo.png">
         <meta name='robots' content='max-image-preview:large'/>
         <link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://www.cdsamcam.es/feed/"/>
@@ -88,6 +88,83 @@
                 position: relative;
                 bottom: 0;
                 width: 100%;
+            }
+
+             /* Estilos para todo el body */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                box-sizing: border-box;
+                width: 100%;
+                overflow-x: hidden; /* Para evitar el desplazamiento horizontal */
+            }
+
+            /* Estilo del contenedor general */
+            .full-width-section {
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            /* Ejemplo de color de fondo para una sección */
+            .section-background {
+                color: white; /* Texto en blanco para mayor contraste */
+            }
+
+            /* Estilo del contenido de las secciones */
+            .container {
+                max-width: 1200px; /* Limita el ancho del contenido */
+                margin: 0 auto; /* Centra el contenido en pantallas grandes */
+                padding: 0 20px; /* Añade algo de espacio lateral */
+            }
+
+            /* Estilos del grid de las fotos (team-grid) */
+            #team-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+                gap: 20px;
+                width: 100%;
+                padding: 20px 0; /* Espaciado interno */
+            }
+
+            .player-card {
+                text-align: center;
+                border: 1px solid #ddd;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+                background-color: whitesmoke;
+            }
+
+            .player-card img {
+                max-width: 10em;
+                border-radius: 50%;
+            }
+
+            /* Media queries para pantallas más pequeñas como tablets */
+            @media (max-width: 880px) {
+                #team-grid {
+                    grid-template-columns: 1fr; /* Cambia a una columna en tablets */
+                }
+
+                .player-card img {
+                    max-width: 10em; /* Ajustamos el tamaño de las imágenes */
+                }
+            }
+
+            /* Media queries para móviles */
+            @media (max-width: 480px) {
+                .container {
+                    padding: 0 10px; /* Menor padding lateral en móviles */
+                }
+
+                #team-grid {
+                    grid-template-columns: 1fr; /* Una columna en móviles */
+                }
+
+                .player-card img {
+                    max-width: 10em; /* Reducimos aún más el tamaño de las imágenes */
+                }
             }
         </style>
         <link rel='stylesheet' id='wp-block-library-css' href='https://www.cdsamcam.es/wp-includes/css/dist/block-library/style.min.css?ver=6.2.6' media='all'/>
@@ -423,10 +500,6 @@
             }
         </style>
         <link rel='stylesheet' id='gox-style-0-css' href='Estilos/Estilo_index.css' media='all'/>
-        <link rel="canonical" href="https://www.cdsamcam.es/quienes-somos/"/>
-        <link rel='shortlink' href='https://www.cdsamcam.es/?p=749'/>
-        <link rel="alternate" type="application/json+oembed" href="https://www.cdsamcam.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cdsamcam.es%2Fquienes-somos%2F"/>
-        <link rel="alternate" type="text/xml+oembed" href="https://www.cdsamcam.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cdsamcam.es%2Fquienes-somos%2F&#038;format=xml"/>
         <script>
             window.goxwpDeployment = true;
         </script>
@@ -2558,6 +2631,119 @@
                         </div>
                     </div>
                 </div>
+
+                <div data-zone-type="content" class="section section-root section-geometry section-geometry-rectangle" data-shape="rectangle" style="--heading-color-h1:#ffffff;--font-family-h1:BioRhyme;--font-size-h1:35px;--font-weight-h1:normal;--word-wrap-h1:break-word;--overflow-wrap-h1:break-word;--font-style-h1:normal;--text-decoration-h1:none;--heading-color-h2:#ffffff;--font-family-h2:BioRhyme;--font-size-h2:29px;--font-weight-h2:normal;--word-wrap-h2:break-word;--overflow-wrap-h2:break-word;--font-style-h2:normal;--text-decoration-h2:none;--heading-color-h3:#ffffff;--font-family-h3:BioRhyme;--font-size-h3:24px;--font-weight-h3:normal;--word-wrap-h3:break-word;--overflow-wrap-h3:break-word;--font-style-h3:normal;--text-decoration-h3:none;--heading-color-h4:#ffffff;--font-family-h4:BioRhyme;--font-size-h4:20px;--font-weight-h4:normal;--word-wrap-h4:break-word;--overflow-wrap-h4:break-word;--font-style-h4:normal;--text-decoration-h4:none;--heading-color-h5:#ffffff;--font-family-h5:BioRhyme;--font-size-h5:16px;--font-weight-h5:normal;--word-wrap-h5:break-word;--overflow-wrap-h5:break-word;--font-style-h5:normal;--text-decoration-h5:none;--heading-color-h6:#ffffff;--font-family-h6:BioRhyme;--font-size-h6:14px;--font-weight-h6:normal;--word-wrap-h6:break-word;--overflow-wrap-h6:break-word;--font-style-h6:normal;--text-decoration-h6:none;--text-container-color:#ffffff;--text-container-anchor-color:#ffffff;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none">
+                    <div style="background-color:#00eaff" class="section-inner section-edge18Inner" data-styled-section-id="68b72bc5-b387-48b2-b7db-6e8973f9c035"></div>
+                    <div class="section-content">
+                        <div class="grid-row-root grid-row-has-rows grid-row-top-level grid-row-0446c0db-044c-499b-acd4-7ff361f6a16f" data-top-level="true" style="padding-top:80px;padding-bottom:80px;--grid-row-no-full-width:960px;--grid-row-spacing-unit:8px;--grid-row-top-level-padding:16px;--grid-row-top-level-padding-lg:8px">
+                            <div class="grid-row-root grid-row-has-columns grid-row-non-full-width" style="--grid-row-no-full-width:960px;--grid-row-spacing-unit:8px;--grid-row-top-level-padding:16px;--grid-row-top-level-padding-lg:8px">
+                                <div class="grid-column-root grid-column-small-12 grid-column-medium-6 grid-column-large-6" style="--grid-column-spacing-unit:8px;--grid-column-vertical-spacing:16px">
+                                    <div class="grid-row-root grid-row-has-columns grid-row-full-width" style="--grid-row-no-full-width:960px;--grid-row-spacing-unit:8px;--grid-row-top-level-padding:16px;--grid-row-top-level-padding-lg:8px">
+                                        <div class="grid-column-root grid-column-small-12 grid-column-medium-12 grid-column-large-12" style="--grid-column-spacing-unit:8px;--grid-column-vertical-spacing:16px">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="grid-row-root grid-row-has-columns grid-row-full-width" style="--grid-row-no-full-width:960px;--grid-row-spacing-unit:8px;--grid-row-top-level-padding:16px;--grid-row-top-level-padding-lg:8px">
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="grid-column-root grid-column-small-12 grid-column-medium-6 grid-column-large-6" style="--grid-column-spacing-unit:8px;--grid-column-vertical-spacing:16px">
+                                    <div class="grid-row-root grid-row-has-columns grid-row-full-width" style="--grid-row-no-full-width:960px;--grid-row-spacing-unit:8px;--grid-row-top-level-padding:16px;--grid-row-top-level-padding-lg:8px">
+                                        <div class="grid-column-root grid-column-small-12 grid-column-medium-12 grid-column-large-12" style="--grid-column-spacing-unit:8px;--grid-column-vertical-spacing:16px">
+                                            <div style="--margin-top:0px;--margin-bottom:8px;--margin-left:0px;--margin-right:0px" class="module-container-custom module-container-root">
+                                                <div class="heading-module-559acd0a-713e-45c1-b2c9-6dac7c6ee74f">
+                                                    <div class="heading-root">
+                                                        <h2 style="text-align: center;">Nuestra Plantilla</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <section id="equipo">
+                                                <div class="player-grid" id="team-grid">
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/silueta-hombre.png" alt="Jugador">
+                                                        <h3>Antonio Cordero</h3>
+                                                        <p>Entrenador</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Manuela</h3>
+                                                        <p>Delegada</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>María García</h3>
+                                                        <p>Portera</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Manuela Herrera</h3>
+                                                        <p>Lateral derecho</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Daniela Padilla</h3>
+                                                        <p>Lateral Izquierdo</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Lucía Bustos</h3>
+                                                        <p>Defensa Central</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Valentina Sánchez</h3>
+                                                        <p>Defensa Central</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Marina Bautista</h3>
+                                                        <p>Pivote</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Claudia Rodriguez</h3>
+                                                        <p>Pivote</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Mercedes Sánchez</h3>
+                                                        <p>Medio Punta</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Noelia Dalí</h3>
+                                                        <p>Delantera</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Violeta García</h3>
+                                                        <p>Delantera</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Ángela Trujillo</h3>
+                                                        <p>Extremo</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>María Galán</h3>
+                                                        <p>Extremo</p>
+                                                    </div>
+                                                    <div class="player-card animate">
+                                                        <img src="fotos/mujer.png" alt="Jugador">
+                                                        <h3>Alba Vázquez</h3>
+                                                        <p>Extremo</p>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div data-zone-type="content" class="section section-root section-geometry section-geometry-slanted" data-shape="slanted" style="--heading-color-h1:#99700a;--font-family-h1:BioRhyme;--font-size-h1:35px;--font-weight-h1:normal;--word-wrap-h1:break-word;--overflow-wrap-h1:break-word;--font-style-h1:normal;--text-decoration-h1:none;--heading-color-h2:#99700a;--font-family-h2:BioRhyme;--font-size-h2:29px;--font-weight-h2:normal;--word-wrap-h2:break-word;--overflow-wrap-h2:break-word;--font-style-h2:normal;--text-decoration-h2:none;--heading-color-h3:#99700a;--font-family-h3:BioRhyme;--font-size-h3:24px;--font-weight-h3:normal;--word-wrap-h3:break-word;--overflow-wrap-h3:break-word;--font-style-h3:normal;--text-decoration-h3:none;--heading-color-h4:#99700a;--font-family-h4:BioRhyme;--font-size-h4:20px;--font-weight-h4:normal;--word-wrap-h4:break-word;--overflow-wrap-h4:break-word;--font-style-h4:normal;--text-decoration-h4:none;--heading-color-h5:#4D5656;--font-family-h5:BioRhyme;--font-size-h5:16px;--font-weight-h5:normal;--word-wrap-h5:break-word;--overflow-wrap-h5:break-word;--font-style-h5:normal;--text-decoration-h5:none;--heading-color-h6:#4D5656;--font-family-h6:BioRhyme;--font-size-h6:14px;--font-weight-h6:normal;--word-wrap-h6:break-word;--overflow-wrap-h6:break-word;--font-style-h6:normal;--text-decoration-h6:none;--text-container-color:#4D5656;--text-container-anchor-color:#99700a;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none">
                     <div style="background-color:#ffffff;color:#4D5656" class="section-inner section-edge18Inner" data-styled-section-id="2ea60017-3cad-4e75-8562-a7c58fa587e2"></div>

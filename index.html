@@ -141,6 +141,70 @@
                 border-radius: 50%;
             }
 
+            .hidden {
+                display: none;
+            }
+
+            .oculto {
+                display: none;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            #show-more-btn {
+                background-color: #000203; /* Color de fondo */
+                color: white; /* Color del texto */
+                border: none; /* Sin borde */
+                border-radius: 25px; /* Bordes redondeados */
+                padding: 10px 20px; /* Espaciado interior */
+                font-size: 16px; /* Tamaño del texto */
+                cursor: pointer; /* Mano al pasar el ratón */
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+                transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
+            }
+
+            #show-more-btn:hover {
+                background-color: #fffb00; /* Color al pasar el ratón */
+                transform: scale(1.05); /* Efecto de zoom al hacer hover */
+                color: black;
+            }
+
+            #show-more-btn:active {
+                transform: scale(0.95); /* Efecto al hacer clic */
+            }
+
+            .button-fotos {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            #masFotos {
+                background-color: #000203; /* Color de fondo */
+                color: white; /* Color del texto */
+                border: none; /* Sin borde */
+                border-radius: 25px; /* Bordes redondeados */
+                padding: 10px 20px; /* Espaciado interior */
+                font-size: 16px; /* Tamaño del texto */
+                cursor: pointer; /* Mano al pasar el ratón */
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+                transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
+            }
+
+            #masFotos:hover {
+                background-color: #00bbde; /* Color al pasar el ratón */
+                transform: scale(1.05); /* Efecto de zoom al hacer hover */
+                color: black;
+            }
+
+            #masFotos:active {
+                transform: scale(0.95); /* Efecto al hacer clic */
+            }
+
             /* Media queries para pantallas más pequeñas como tablets */
             @media (max-width: 880px) {
                 #team-grid {
@@ -159,11 +223,11 @@
                 }
 
                 #team-grid {
-                    grid-template-columns: 1fr; /* Una columna en móviles */
+                    grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes */
                 }
 
                 .player-card img {
-                    max-width: 10em; /* Reducimos aún más el tamaño de las imágenes */
+                    max-width: 5em; /* Reducimos aún más el tamaño de las imágenes */
                 }
             }
         </style>
@@ -2389,7 +2453,7 @@
                                             </div>
                                             <ul class="navigation-list">
                                                 <li data-page-id="d56f3cee-9e1c-4ffa-9aa9-90111b06de5a" class="navigation-item navigation-fill-filled navigation-shape-smooth navigation-label-small">
-                                                    <a href="index.html" data-navigation-anchor="true">INICIO</a>
+                                                    <a href="https://cadetefemeninoubl.club/" data-navigation-anchor="true">INICIO</a>
                                                 </li>
                                                 <li data-page-id="51ef929c-7a14-4494-bb4f-6def683df1e6" class="navigation-item navigation-fill-filled navigation-shape-smooth navigation-label-small">
                                                     <a href="contacto.html" data-navigation-anchor="true">CONTACTO</a>
@@ -2466,7 +2530,7 @@
                                             <div class="heading-module-e3a44b51-227a-477a-8cc8-b83bff414a9e">
                                                 <div class="heading-root">
                                                     <h1 style="text-align:center">
-                                                        <span class="theming-custom" style="color:#00bbde;">NUESTRO EQUIPO</span>
+                                                        <span class="theming-custom" style="color:#00bbde;">Cadete Femenino UBL</span>
                                                     </h1>
                                                 </div>
                                             </div>
@@ -2529,7 +2593,6 @@
 
                                                                         ¡Es hora de demostrar de qué estás hecha!</span>
                                                                 </p>
-                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2644,8 +2707,6 @@
                                         </div>
                                     </div>
                                     <div class="grid-row-root grid-row-has-columns grid-row-full-width" style="--grid-row-no-full-width:960px;--grid-row-spacing-unit:8px;--grid-row-top-level-padding:16px;--grid-row-top-level-padding-lg:8px">
-                                        
-                                        
                                     </div>
                                 </div>
                                 <div class="grid-column-root grid-column-small-12 grid-column-medium-6 grid-column-large-6" style="--grid-column-spacing-unit:8px;--grid-column-vertical-spacing:16px">
@@ -2654,7 +2715,7 @@
                                             <div style="--margin-top:0px;--margin-bottom:8px;--margin-left:0px;--margin-right:0px" class="module-container-custom module-container-root">
                                                 <div class="heading-module-559acd0a-713e-45c1-b2c9-6dac7c6ee74f">
                                                     <div class="heading-root">
-                                                        <h2 style="text-align: center;">Nuestra Plantilla</h2>
+                                                        <h2 style="text-align: center;">Plantilla</h2>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2680,63 +2741,67 @@
                                                         <h3>Manuela Herrera</h3>
                                                         <p>Lateral derecho</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Daniela Padilla</h3>
                                                         <p>Lateral Izquierdo</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Lucía Bustos</h3>
                                                         <p>Defensa Central</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Valentina Sánchez</h3>
                                                         <p>Defensa Central</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Marina Bautista</h3>
                                                         <p>Pivote</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Claudia Rodriguez</h3>
                                                         <p>Pivote</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Mercedes Sánchez</h3>
                                                         <p>Medio Punta</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Noelia Dalí</h3>
                                                         <p>Delantera</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Violeta García</h3>
                                                         <p>Delantera</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Ángela Trujillo</h3>
                                                         <p>Extremo</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>María Galán</h3>
                                                         <p>Extremo</p>
                                                     </div>
-                                                    <div class="player-card animate">
+                                                    <div class="player-card hidden">
                                                         <img src="fotos/mujer.png" alt="Jugador">
                                                         <h3>Alba Vázquez</h3>
                                                         <p>Extremo</p>
                                                     </div>
                                                 </div>
                                             </section>
+                                            <!-- Botón para mostrar más imágenes -->
+                                            <div class="button-container">
+                                                <button id="show-more-btn" onclick="toggleImages()">Mostrar más</button>
+                                            </div>
                                     </div>      
                                 </div>
                             </div>
@@ -2744,6 +2809,30 @@
                     </div>
                 </div>
 
+
+
+                <script>
+                    let showAll = false;
+                    
+                
+                    function toggleImages() {
+                        const hiddenCards = document.querySelectorAll('.player-card.hidden');
+                        const btn = document.getElementById('show-more-btn');
+                
+                        if (!showAll) {
+                            hiddenCards.forEach(card => card.style.display = 'block');
+                            btn.textContent = 'Mostrar menos';
+                        } else {
+                            hiddenCards.forEach(card => card.style.display = 'none');
+                            btn.textContent = 'Mostrar más';
+                        }
+                
+                        showAll = !showAll;
+                    }
+
+                    
+                </script>
+                
 
                 <div data-zone-type="content" class="section section-root section-geometry section-geometry-slanted" data-shape="slanted" style="--heading-color-h1:#99700a;--font-family-h1:BioRhyme;--font-size-h1:35px;--font-weight-h1:normal;--word-wrap-h1:break-word;--overflow-wrap-h1:break-word;--font-style-h1:normal;--text-decoration-h1:none;--heading-color-h2:#99700a;--font-family-h2:BioRhyme;--font-size-h2:29px;--font-weight-h2:normal;--word-wrap-h2:break-word;--overflow-wrap-h2:break-word;--font-style-h2:normal;--text-decoration-h2:none;--heading-color-h3:#99700a;--font-family-h3:BioRhyme;--font-size-h3:24px;--font-weight-h3:normal;--word-wrap-h3:break-word;--overflow-wrap-h3:break-word;--font-style-h3:normal;--text-decoration-h3:none;--heading-color-h4:#99700a;--font-family-h4:BioRhyme;--font-size-h4:20px;--font-weight-h4:normal;--word-wrap-h4:break-word;--overflow-wrap-h4:break-word;--font-style-h4:normal;--text-decoration-h4:none;--heading-color-h5:#4D5656;--font-family-h5:BioRhyme;--font-size-h5:16px;--font-weight-h5:normal;--word-wrap-h5:break-word;--overflow-wrap-h5:break-word;--font-style-h5:normal;--text-decoration-h5:none;--heading-color-h6:#4D5656;--font-family-h6:BioRhyme;--font-size-h6:14px;--font-weight-h6:normal;--word-wrap-h6:break-word;--overflow-wrap-h6:break-word;--font-style-h6:normal;--text-decoration-h6:none;--text-container-color:#4D5656;--text-container-anchor-color:#99700a;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none">
                     <div style="background-color:#ffffff;color:#4D5656" class="section-inner section-edge18Inner" data-styled-section-id="2ea60017-3cad-4e75-8562-a7c58fa587e2"></div>
@@ -2784,6 +2873,7 @@
                                 <div class="grid-column-root grid-column-small-12 grid-column-medium-12 grid-column-large-12" style="--grid-column-spacing-unit:8px;--grid-column-vertical-spacing:16px">
                                     <div class="module-container-custom module-container-root">
                                         <div class="image-gallery-grid image-gallery-gridIE11" style="--image-gallery-grid-gap:8px;--image-gallery-grid-columns:3;--image-gallery-grid-rows:7;--image-gallery-grid-rows-IE:1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr;--image-gallery-grid-columns-IE:1fr 8px 1fr 8px 1fr;--image-gallery-grid-small-devices:2;--image-gallery-grid-row-small-devices:10;--image-gallery-masonry-max-width:unset" data-type="grid">
+                                            
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:1;-ms-grid-row:1;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="fotos/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2791,6 +2881,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:1;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="fotos/loro.png" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2798,6 +2889,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:5;-ms-grid-row:1;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="fotos/flotr.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2805,6 +2897,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:1;-ms-grid-row:3;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/4cea3299-5155-4914-923c-822c8b08d11e/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2812,6 +2905,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:3;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/7b44f5bf-f9af-485a-bbe7-5543bc950763/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2819,6 +2913,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:5;-ms-grid-row:3;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/cb7b8cde-7521-4d46-8e85-69d19f1038e6/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2826,6 +2921,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:1;-ms-grid-row:5;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/b8ad1493-5ed8-432f-807a-1f72e3f2f3b2/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2833,6 +2929,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:5;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/3b8e95a5-d2ad-495f-af46-0114e6a27387/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2840,6 +2937,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:5;-ms-grid-row:5;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/b4c365aa-17cd-44f8-9a2e-5ee80c6b6d29/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2847,6 +2945,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:1;-ms-grid-row:7;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/a43ca799-bee4-4228-b26e-2ca0d80ce0e8/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2854,6 +2953,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:7;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/94360618-dc64-4937-b2cf-4ab591929cc2/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2861,6 +2961,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:5;-ms-grid-row:7;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/95ec76b1-2ad1-41ae-a591-b5c57ad289a0/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2868,6 +2969,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:1;-ms-grid-row:9;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/c7094c46-f70b-4cce-bef9-353ef6159347/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2875,6 +2977,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:9;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/e276f33e-5c51-48f3-86e4-c7e1fda59d02/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2882,6 +2985,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:5;-ms-grid-row:9;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/05c70bd5-2fae-4690-aa5a-a0ebda0f353f/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2889,6 +2993,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:1;-ms-grid-row:11;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/726053a1-d0d4-4873-80cb-33329d80cb88/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2896,6 +3001,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:11;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/796b1fcc-4afe-4d1f-9395-db65b5b89bc1/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2903,6 +3009,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:5;-ms-grid-row:11;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/8b5cfdb0-0514-4378-abc6-1ac8153a5e67/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2910,6 +3017,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:1;-ms-grid-row:13;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
                                                     <a href="/wp-content/uploads/go-x/u/713353ff-7d81-424c-9d35-9ec37ccb55c0/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
@@ -2917,8 +3025,40 @@
                                                     </a>
                                                 </div>
                                             </div>
+
                                             <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:13;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
                                                 <div class="image-gallery-wrapper-image">
+                                                    <a href="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
+                                                        <img decoding="async" src="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg" srcset="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-322x320.jpg 322w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg 458w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-258x256.jpg 258w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-386x384.jpg 386w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-189x188.jpg 189w" sizes="(min-width: 1024px) 322px,(min-width: 960px) 322px,(min-width: 768px) 34vw,(min-width: 0px) 50vw" class="image-gallery-img-grid" style="object-position:50% 50%"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:13;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
+                                                <div class="image-gallery-wrapper-image">
+                                                    <a href="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
+                                                        <img decoding="async" src="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg" srcset="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-322x320.jpg 322w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg 458w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-258x256.jpg 258w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-386x384.jpg 386w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-189x188.jpg 189w" sizes="(min-width: 1024px) 322px,(min-width: 960px) 322px,(min-width: 768px) 34vw,(min-width: 0px) 50vw" class="image-gallery-img-grid" style="object-position:50% 50%"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!--22-->
+                                            <div class="image-gallery-wrapper-item oculto" style="-ms-grid-column:3;-ms-grid-row:13;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
+                                                <div class="image-gallery-wrapper-image oculto">
+                                                    <a href="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
+                                                        <img decoding="async" src="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg" srcset="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-322x320.jpg 322w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg 458w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-258x256.jpg 258w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-386x384.jpg 386w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-189x188.jpg 189w" sizes="(min-width: 1024px) 322px,(min-width: 960px) 322px,(min-width: 768px) 34vw,(min-width: 0px) 50vw" class="image-gallery-img-grid" style="object-position:50% 50%"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:13;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
+                                                <div class="image-gallery-wrapper-image oculto">
+                                                    <a href="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
+                                                        <img decoding="async" src="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg" srcset="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-322x320.jpg 322w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg 458w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-258x256.jpg 258w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-386x384.jpg 386w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-189x188.jpg 189w" sizes="(min-width: 1024px) 322px,(min-width: 960px) 322px,(min-width: 768px) 34vw,(min-width: 0px) 50vw" class="image-gallery-img-grid" style="object-position:50% 50%"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="image-gallery-wrapper-item" style="-ms-grid-column:3;-ms-grid-row:13;--title-padding:4px 0;--title-margin:0;--title-display:none;--title-width:100%;--title-min-height:2.4em;--title-align-items:flex-start;--title-color:#4D5656;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--title-justify-content:center;--span-overflow:hidden;--span-text-overflow:ellipsis;--span-white-space:nowrap;--span-line-height:1.4em;--span-width:90%;--span-height:1.4em;--span-margin-left:0;--span-margin-right:0;--span-text-align:center;--span-margin-top:4px;--span-margin-bottom:0;--image-gallery-grid-gap:8px">
+                                                <div class="image-gallery-wrapper-image oculto">
                                                     <a href="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/atardecer.jpg" class="lightbox image-gallery-link" data-glightbox="type: image" data-gallery="60540e48-42d2-4b92-93e8-1d671e5715df">
                                                         <img decoding="async" src="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg" srcset="/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-322x320.jpg 322w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-458x455.jpg 458w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-258x256.jpg 258w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-386x384.jpg 386w,/wp-content/uploads/go-x/u/5c5bf73d-7f5f-482a-9c1d-940cb41ef7cb/image-189x188.jpg 189w" sizes="(min-width: 1024px) 322px,(min-width: 960px) 322px,(min-width: 768px) 34vw,(min-width: 0px) 50vw" class="image-gallery-img-grid" style="object-position:50% 50%"/>
                                                     </a>
@@ -2927,37 +3067,43 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Contenedor del botón centrado -->
+                            <div class="button-fotos">
+                                <button id="masFotos" onclick="toggleImagesFotos()">Mostrar más</button>
+                            </div>
                             </div>
                         </div>
                     </div>
-                    
+                    <script>
+                        let showAllFotos = false; // Inicialización de la variable
+
+                        function toggleImagesFotos() {
+                            const hiddenCards = document.querySelectorAll('.image-gallery-wrapper-image.oculto');
+                            const btn = document.getElementById('masFotos');
+
+                            if (!showAllFotos) {
+                                hiddenCards.forEach(card => {
+                                    card.style.display = 'block';
+                                });
+                                btn.textContent = 'Mostrar menos';
+                            } else {
+                                hiddenCards.forEach(card => {
+                                    card.style.display = 'none';
+                                });
+                                btn.textContent = 'Mostrar más';
+                            }
+
+                            showAllFotos = !showAllFotos; // Cambiar el estado
+                        }
+                        
+                    </script>
                 </div>
                 
 
 </div>
 <!-- /wp:go-x/page -->
 <!-- wp:go-x/consent-banner {"classes":{"root":"consent-banner-root","banner":"consent-banner-banner","message":"consent-banner-message","icon":"consent-banner-icon","buttonAccept":"consent-banner-button-accept","buttonReject":"consent-banner-button-reject","buttonContainer":"consent-banner-button-container"},"buttonClasses":{"button":"button-button","primaryButton":"button-primary-button","ghostButton":"button-ghost-button","linkButton":"button-link-button"},"textContainerClass":"text-root","styles":{"u002du002dfont-family-button":"Cabin","u002du002dfont-size-button":"14px","u002du002dfont-weight-button":"normal","u002du002dword-wrap-button":"break-word","u002du002doverflow-wrap-button":"break-word","u002du002dfont-style-button":"normal","u002du002dtext-decoration-button":"none","u002du002dbutton-background-color":"#CB0F33","u002du002dbutton-color-primary":"#ffffff","u002du002dbutton-color-link":"#CB0F33","u002du002dbutton-color-ghost":"#CB0F33","u002du002dtext-container-color":"#4D5656","u002du002dtext-container-anchor-color":"#99700a","u002du002dfont-family":"Cabin","u002du002dfont-size":"14px","u002du002dfont-weight":"normal","u002du002dword-wrap":"break-word","u002du002doverflow-wrap":"break-word","u002du002dfont-style":"normal","u002du002dtext-decoration":"none","u002du002dconsent-background-color":"#ffffff","u002du002dconsent-non-full-width":"960px","u002du002dconsent-text-color":"#4A5A73","u002du002dconsent-link-color":"#1183D1","u002du002dconsent-button-color":"#A0A0A0","u002du002dconsent-icon-color":"#A0A0A0","u002du002dconsent-max-width-banner-mobile":"1040px"},"t":{"message":"Este sitio web utiliza tecnologías de seguimiento de terceros para proporcionar y mejorar continuamente nuestros servicios, y mostrarle anuncios de acuerdo a sus intereses.nn        Estoy de acuerdo y sé que puedo revocar mi consentimiento o cambiar las configuraciones del mismo en cualquier momento.","privacy":"Política de privacidad","impressum":"Aviso legal","more":"Más información","accept":"Acepto","reject":"Rechazo","settings":"Configuración de privacidad","showDescription":"Más","hideDescription":"Menos","settingsDescription":"Con esta herramienta podrá activar o desactivar varias funcionalidades utilizadas en este sitio web tales como etiquetas, rastreadores, herramientas de análisis, etc.","saveSettings":"Guardar la configuración","servicesTitles":{"maps":"Google Maps","shops":"Tienda","video":"Vídeo de YouTube"},"functional":"Seleccione todos los servicios"},"privacyLink":"","impressumLink":""} -->
-<div class="consent-banner-root banner-consent-all" style="--font-family-button:Cabin;--font-size-button:14px;--font-weight-button:normal;--word-wrap-button:break-word;--overflow-wrap-button:break-word;--font-style-button:normal;--text-decoration-button:none;--button-background-color:#CB0F33;--button-color-primary:#ffffff;--button-color-link:#CB0F33;--button-color-ghost:#CB0F33;--text-container-color:#4D5656;--text-container-anchor-color:#99700a;--font-family:Cabin;--font-size:14px;--font-weight:normal;--word-wrap:break-word;--overflow-wrap:break-word;--font-style:normal;--text-decoration:none;--consent-background-color:#ffffff;--consent-non-full-width:960px;--consent-text-color:#4A5A73;--consent-link-color:#1183D1;--consent-button-color:#A0A0A0;--consent-icon-color:#A0A0A0;--consent-max-width-banner-mobile:1040px;visibility:hidden">
-    <div class="consent-banner-banner">
-        <div class="text-root consent-banner-message banner-consent-text">
-            <p class="consent-banner-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12C21,11.5 20.96,11 20.87,10.5C20.6,10 20,10 20,10H18V9C18,8 17,8 17,8H15V7C15,6 14,6 14,6H13V4C13,3 12,3 12,3M9.5,6A1.5,1.5 0 0,1 11,7.5A1.5,1.5 0 0,1 9.5,9A1.5,1.5 0 0,1 8,7.5A1.5,1.5 0 0,1 9.5,6M6.5,10A1.5,1.5 0 0,1 8,11.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 5,11.5A1.5,1.5 0 0,1 6.5,10M11.5,11A1.5,1.5 0 0,1 13,12.5A1.5,1.5 0 0,1 11.5,14A1.5,1.5 0 0,1 10,12.5A1.5,1.5 0 0,1 11.5,11M16.5,13A1.5,1.5 0 0,1 18,14.5A1.5,1.5 0 0,1 16.5,16H16.5A1.5,1.5 0 0,1 15,14.5H15A1.5,1.5 0 0,1 16.5,13M11,16A1.5,1.5 0 0,1 12.5,17.5A1.5,1.5 0 0,1 11,19A1.5,1.5 0 0,1 9.5,17.5A1.5,1.5 0 0,1 11,16Z"></path>
-                </svg>
-            </p>
-            <p>
-                Este sitio web utiliza tecnologías de seguimiento de terceros para proporcionar y mejorar continuamente nuestros servicios, y mostrarle anuncios de acuerdo a sus intereses.
 
-                            Estoy de acuerdo y sé que puedo revocar mi consentimiento o cambiar las configuraciones del mismo en cualquier momento. <br/>
-                <a href="#" class="banner-consent-action-more">Más información</a>
-            </p>
-        </div>
-        <div class="consent-banner-button-container">
-            <a href="#" class="button-ghost-button button-button consent-banner-button-accept accept-consent-all">Acepto</a>
-            <a href="#" class="button-primary-button button-button consent-banner-button-reject reject-consent-all">Rechazo</a>
-        </div>
-    </div>
-</div>
 <!-- /wp:go-x/consent-banner -->
 <!-- wp:go-x/privacy-settings {"styles":{"u002du002dfont-family-button":"Cabin","u002du002dfont-size-button":"14px","u002du002dfont-weight-button":"normal","u002du002dword-wrap-button":"break-word","u002du002doverflow-wrap-button":"break-word","u002du002dfont-style-button":"normal","u002du002dtext-decoration-button":"none","u002du002dbutton-background-color":"#CB0F33","u002du002dbutton-color-primary":"#ffffff","u002du002dbutton-color-link":"#CB0F33","u002du002dbutton-color-ghost":"#CB0F33","u002du002dtext-container-color":"#4D5656","u002du002dtext-container-anchor-color":"#99700a","u002du002dfont-family":"Cabin","u002du002dfont-size":"14px","u002du002dfont-weight":"normal","u002du002dword-wrap":"break-word","u002du002doverflow-wrap":"break-word","u002du002dfont-style":"normal","u002du002dtext-decoration":"none","u002du002dprivacy-settings-consent-color-background":"#ffffff","u002du002dprivacy-settings-consent-color-title":"#4A5A73","u002du002dprivacy-settings-consent-color-text":"#4A5A73","u002du002dprivacy-settings-consent-color-link":"#1183D1","u002du002dprivacy-settings-consent-color-button":"#A0A0A0"},"textContainerClass":"text-root","buttonClasses":{"button":"button-button","primaryButton":"button-primary-button","ghostButton":"button-ghost-button","linkButton":"button-link-button"},"classes":{"serviceShowDescriptionlsWrapper":"privacy-settings-service-show-description-ls-wrapper","root":"privacy-settings-root","cookieIcon":"privacy-settings-cookie-icon","buttonText":"privacy-settings-button-text"},"types":["video","maps"],"userDefinedConsentIds":[],"actionTypes":[{"type":"video","actionType":["videoModule"]},{"type":"maps","actionType":["mapModule"]}],"t":{"message":"Este sitio web utiliza tecnologías de seguimiento de terceros para proporcionar y mejorar continuamente nuestros servicios, y mostrarle anuncios de acuerdo a sus intereses.nn        Estoy de acuerdo y sé que puedo revocar mi consentimiento o cambiar las configuraciones del mismo en cualquier momento.","privacy":"Política de privacidad","impressum":"Aviso legal","more":"Más información","accept":"Acepto","reject":"Rechazo","settings":"Configuración de privacidad","showDescription":"Más","hideDescription":"Menos","settingsDescription":"Con esta herramienta podrá activar o desactivar varias funcionalidades utilizadas en este sitio web tales como etiquetas, rastreadores, herramientas de análisis, etc.","saveSettings":"Guardar la configuración","servicesTitles":{"maps":"Google Maps","shops":"Tienda","video":"Vídeo de YouTube"},"functional":"Seleccione todos los servicios"},"locale":"es-ES","rootHeadingClass":"heading-root"} -->
 <div>
@@ -3169,4 +3315,5 @@
         </p>
     </div>
 </footer>
-</body></html>
+</body>
+</html>
